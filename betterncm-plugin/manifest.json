@@ -1,0 +1,38 @@
+{
+    "manifest_version": 1,
+    "name": "MC游戏内歌词",
+    "slug": "Minecraft-Lyrics",
+    "description": "在Minecraft上显示歌词,部分代码来源于mo-jinran/Taskbar-Lyrics",
+    "preview": "preview.png",
+    "version": "1.6.3",
+    "author": "CubeWhy, mo-jinran",
+    "author_links": [
+        "https://github.com/cubewhy/",
+        "https://github.com/XiaoHeiPa",
+        "https://www.lunarclient.top/"
+    ],
+    "type": "extension",
+    "loadAfter": [
+        "liblyric",
+        "RefinedNowPlaying"
+    ],
+    "requirements": [
+        "liblyric"
+    ],
+    "injects": {
+        "Main": [
+            {
+                "file": "base.js"
+            },
+            {
+                "file": "lyric.js"
+            },
+            {
+                "file": "func.js"
+            },
+            {
+                "file": "view.js"
+            }
+        ]
+    }
+}
